@@ -1,0 +1,446 @@
+.frame67-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+.frame67-frame67 {
+  width: 483px;
+  height: 584px;
+  display: flex;
+  position: fixed;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame67-group32 {
+  top: 0px;
+  left: 0px;
+  width: 483px;
+  height: 584px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame67-group31 {
+  top: 0px;
+  left: 0px;
+  width: 483px;
+  height: 584px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.frame67-group30 {
+  top: 0px;
+  left: 0px;
+  width: 482px;
+  height: 584px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 37px;
+}
+.frame67-image {
+  top: 76px;
+  left: 38px;
+  width: 212px;
+  height: 144px;
+  position: absolute;
+  border-radius: 12px;
+}
+.frame67-content1 {
+  top: 94.62020874023438px;
+  left: 240px;
+  height: 67.14982604980469px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  flex-grow: 1;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+.frame67-content2 {
+  gap: 16px;
+  display: flex;
+  padding: 16px;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: center;
+}
+.frame67-button {
+  gap: 8px;
+  top: 510px;
+  left: 175px;
+  width: 30%;
+  height: 35.60975646972656px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 100px;
+  flex-direction: column;
+  justify-content: center;
+  background: #9d13d3;
+  background: #65558F;
+  color: white;
+  border:none;
+}
+
+.frame67-button:hover {
+  background: #550873;
+  transform: scale(1.1); 
+}
+
+.frame67-statelayer1 {
+  gap: 8px;
+  display: flex;
+  padding: 10px 24px;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.frame67-text10 {
+  color: var(--dl-color-m3_sys_light-onprimary);
+  height: auto;
+  text-align: center;
+  line-height: 20px;
+}
+.frame67-statelayer2 {
+  gap: 8px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  padding: 10px 24px;
+  position: absolute;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+}
+.frame67-text11 {
+  color: var(--dl-color-m3_sys_light-onprimary);
+  height: auto;
+  text-align: center;
+  line-height: 20px;
+}
+.frame67-scrollbar {
+  top: 236px;
+  left: 468px;
+  width: 5px;
+  height: 87px;
+  position: absolute;
+  box-sizing: content-box;
+  border-color: rgba(255, 255, 255, 0.14749999344348907);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3.5px;
+}
+.frame67-text12 {
+  top: 26.452960968017578px;
+  left: 185px;
+  color: var(--dl-color-m3_sys_light-onsurface);
+  width: 206px;
+  height: auto;
+  position: absolute;
+  align-self: stretch;
+  text-align: left;
+  line-height: 28px;
+}
+
+.group66-back{
+  gap: 8px;
+  top: 9px;
+  left: 0px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: none;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.frame67-close {
+  gap: 8px;
+  top: 20px;
+  left: 410px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.frame67-close:hover {
+  transform: scale(1.1); 
+  background-color:red;
+}
+.frame67-cornerupleft {
+  top: 23.400697708129883px;
+  left: 38px;
+  width: 37px;
+  height: 31px;
+  position: absolute;
+}
+.frame67-arrowleft {
+  top: 223.83274841308594px;
+  left: 88px;
+  width: 24px;
+  height: 24.41811752319336px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+  /*Email */
+  .frame67-input-field1{
+    position: absolute;
+    top: 250px; /* Adjust the value to move the fields further down */
+    left: 10px;
+    width: 465px;
+
+  }
+
+/* First Name */
+.frame67-inputchip6{
+  position: absolute;
+  top: 300px; /* Adjust the value to move the fields further down */
+  left: 10px;
+  width: 230px;
+
+}
+/* Last Name */
+.frame67-statelayer3{
+  position: absolute;
+  top: 300px; 
+  left: 245px;
+  width: 230px;
+}
+ /* Billing */
+
+.frame67-statelayer4{
+  position: absolute;
+  top: 350px; /* Adjust the value to move the fields further down */
+  left: 10px;
+  width: 465px;
+}
+
+/* City */
+.frame67-select3{
+  position: absolute;
+  top: 400px; /* Adjust the value to move the fields further down */
+  left: 10px;
+  width: 120px;
+}
+
+/* State/Province */
+.frame67-select2{
+  position: absolute;
+  top: 400px; /* Adjust the value to move the fields further down */
+  left: 132px;
+  width: 112px;
+}
+ 
+/* Country */
+.frame67-select1 {
+  position: absolute;
+  top: 400px; /* Adjust the value to move the fields further down */
+  left: 247px;
+  width: 125px;
+
+}
+/* Postal Code */
+.frame67-statelayer5{
+  position: absolute;
+  top: 400px; /* Adjust the value to move the fields further down */
+  left: 375px;
+  width: 100px;
+
+}
+/*Card Number*/
+.frame67-input-field2{
+  position: absolute;
+  top: 450px;
+  left: 10px;
+  width: 230px;
+}
+/* Expiration Date */
+.frame67-statelayer6{
+  position: absolute;
+  top: 450px; 
+  left: 245px;
+  width: 125px;
+}
+ /* CVV */
+ .frame67-inputchip5 {
+  position: absolute;
+  top: 450px; 
+  left: 375px;
+  width: 100px;
+}
+
+
+
+
+
+.frame67-chevrondown1 {
+  width: 16px;
+  height: 16px;
+}
+
+
+.frame67-statelayer7 {
+  gap: 8px;
+  display: flex;
+  padding: 6px 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame67-text19 {
+  top: 80px;
+  left: 271px;
+  color: rgba(0, 0, 0, 1);
+  width: 194px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 120.00000476837158%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.frame67-text20 {
+  font-weight: 700;
+}
+.frame67-text21 {
+  font-weight: 400;
+}
+.frame67-text24 {
+  font-weight: 700;
+}
+.frame67-text25 {
+  font-weight: 400;
+}
+.frame67-text28 {
+  font-weight: 700;
+}
+.frame67-text30 {
+  font-weight: 400;
+}
+.frame67-text32 {
+  font-weight: 700;
+}
+
+
+.frame67-content1 {
+  top: 94.6201171875px;
+  top: 60px;
+  left: 40px;
+  bottom: 40px;
+  max-width: 200px;
+  height: 200px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  flex-grow: 1;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.booking-image {
+  justify-content: start;
+  width: 100%;
+  border-radius: 12px;
+}
+/* Apply consistent styling to the input fields inside each box */
+
+.frame67-box5,
+.frame67-box7,
+.frame67-box6,
+.frame67-box8,
+.frame67-box10,
+.frame67-box1,
+.frame67-box2,
+.frame67-box3,
+.frame67-box4,
+.frame67-box9,
+.frame67-box8 {
+color: rgba(30, 30, 30, 1); /* Text color */
+width: 100%; /* Full width of container */
+padding: 12px 16px; /* Consistent padding for a neat appearance */
+font-size: 12px; /* Font size for readability */
+text-align: left; /* Align text to the left */
+font-family: "Inter", sans-serif; /* Font family for consistency */
+font-weight: 400; /* Normal font weight */
+border: 1px solid rgba(217, 217, 217, 1); /* Light gray border */
+border-radius: 8px; /* Rounded corners */
+background-color: rgba(255, 255, 255, 1); /* White background */
+box-sizing: border-box; /* Include padding and border in the element's total width/height */
+
+}
+
+
+
+
+.frame67-text34 {
+  color: var(--dl-color-m3_sys_light-onsurfacevariant);
+  height: auto;
+  text-align: center;
+  line-height: 20px;
+}
+
+
+.frame67-chevrondown2 {
+  width: 16px;
+  height: 16px;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 6px;
+}
+.error input {
+  border-color: red;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.frame67-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

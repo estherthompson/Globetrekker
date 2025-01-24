@@ -1,0 +1,145 @@
+/* Navbar Styles */
+.landmarksNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4a4f8f;
+    border-bottom: 2px solid #ddd;
+    position: sticky; /* Keep navbar fixed at the top */
+    top: 0;
+    z-index: 1000;
+}
+  
+.navbarTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+  
+/* Back Button Icon */
+.backButtonImage {
+    width: 60px; /* Set width */
+    height: 60px; /* Set height */
+    cursor: pointer;
+    filter: invert(1); /* Make icon white */
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+  
+.backButtonImage:hover {
+    transform: scale(1.1); /* Slight hover effect */
+    filter: invert(1) brightness(1.2); /* Increase brightness slightly on hover */
+}
+  
+/* Filter Box */
+.filter-box {
+    display: flex;
+    align-items: center;
+    background-color: #4a4f8f;
+    border: 2px solid white;
+    padding: 1px 10px;
+    margin-right: 50px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    position: relative; /* For dropdown positioning */
+    font-size: 14px;
+}
+
+.filter-box img {
+    width: 36px; /* Smaller icon */
+    height: 36px;
+    filter: invert(1); /* Make icon white */
+    transition: filter 0.2s ease;
+}
+
+.filter-box img:hover {
+    filter: invert(1) brightness(1.2); /* Increase brightness slightly on hover */
+}
+
+.filter-box span {
+    font-size: 14px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 35px; /* Position below the filter box */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 150px; /* Smaller dropdown */
+    padding: 5px 0;
+    max-height: 200px; /* Limit dropdown height */
+    overflow-y: auto; /* Make dropdown scrollable if too many items */
+}
+
+.dropdown-item {
+    padding: 8px 12px;
+    font-size: 12px; /* Smaller text size */
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Landmark Grid */
+.landmark-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 10px 20px;
+    flex-grow: 1; /* Allow grid to expand */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    max-height: calc(100vh - 80px); /* Subtract navbar height for grid scrolling */
+}
+
+.landmark-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+}
+
+.landmark-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.landmark-info h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.view-details-btn {
+    background-color: #4a4f8f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.view-details-btn:hover {
+    background-color: #3b3f70;
+}
+
+/* General Page Scroll */
+.calgary-landmarks {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Allow the page to scroll */
+    background-color: #f9f9f9; /* Optional: Light background for contrast */
+}

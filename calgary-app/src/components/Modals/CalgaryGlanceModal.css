@@ -1,0 +1,172 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+
+    top: 0px;
+    left: 1px;
+    width: 482px;
+    height: 584px;
+    position: relative;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 37px;
+    
+    background-color: rgb(255, 255, 255);
+}
+.modal-title-holder .modal-title {
+    font-size: 24px;
+    justify-self: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    width: 80%; /* The modal width adapts to the screen size */
+    max-width: 700px; /* Limits the width for larger screens */
+    height: 450px; /* Fixed height for the modal */
+    overflow-y: auto; /* Adds scrollbars if content exceeds height */
+    scrollbar-width: thin; /* For Firefox: Makes the scrollbar thinner */
+    position: relative; /* For positioning the close button */
+
+    top: 0px;
+    left: 0px;
+    width: 441px;
+    height: 545px;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 37px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded edges */
+    height: 50px; /* Visually shorten the scrollbar thumb */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.calgaryGlancePositioning {
+    display: grid; /* Use grid layout for landmarks */
+    /* display: inline; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between images */
+    padding: 20px; /* Padding around the images */
+    justify-items: center; /* Center the images within the grid */
+}
+
+.calgaryGlanceImages .calgaryGlanceImgHolder {
+
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Align items (image and title) vertically */
+    width: 90%; /* Ensure the container spans full width */
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 10px; /* Add padding around the content */
+    cursor: pointer;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: #333 solid 2px;
+    justify-self: center;
+}
+
+.calgaryGlanceImages .calgaryGlanceImgHolder img {
+    width: 30%;
+    height: auto;
+    margin: 5%;
+    object-fit: cover; /* Ensure the images cover the area without stretching */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add a smooth effect on hover */
+}
+
+.calgaryGlanceImages .calgaryGlanceTitleHolder h4 {
+
+    text-align: left; /* Align the text to the left */
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    margin-left: 20px; /* Adjust this value to move the title right */
+}
+
+.calgaryGlanceImages .calgaryGlanceTitleHolder p {
+    text-align: left; /* Align the text to the left */
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    margin-left: 20px; /* Adjust this value to move the title right */
+}
+.calgaryGlanceDetailsButton {
+    padding: 8px 16px; /* Increase padding for a larger button */
+    font-size: 18px; /* Make the text larger */
+    background-color: #65558F; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Slightly round the corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transition */
+}
+
+.calgaryGlanceDetailsButton:hover {
+    background-color: #5c087d; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.calgaryGlanceImgTitle {
+    width: 145px;
+    bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calgaryGlanceTitleHolder {
+    width: 100%;
+}
+
+.calgaryGlanceImages {
+    width: 450px;
+}
+
+.calgaryGlanceButtonHolder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.calgaryGlanceDetailsButton {
+    top: 100px;
+
+}

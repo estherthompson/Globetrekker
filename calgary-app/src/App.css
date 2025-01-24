@@ -1,0 +1,262 @@
+/* Import Leaflet CSS for map support */
+@import 'leaflet/dist/leaflet.css';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #ffff;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup content (general) */
+.popup-content {
+  position: relative;
+  background: white;
+  width: 90%;
+  max-width: 1000px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  z-index: 1100;
+  overflow-y: auto; 
+}
+
+.popup-content.large {
+  max-width: 50%; 
+  max-height: 90%;
+  padding: 20px;
+}
+
+/* Close button (X) */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  font-size: 24\px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  width: 20px;
+
+}
+
+.close-button:hover {
+  transform: scale(1.3);
+  background: #FFECEC;
+}
+
+/* Signup-specific styles */
+.signup-popup {
+  border: 2px solid #007bff; 
+}
+
+/* Input fields */
+.popup-content input {
+  width: calc(100% - 20px);
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.popup-content input:focus {
+  border-color: #007bff; 
+  box-shadow: 0px 0px 4px rgba(0, 123, 255, 0.5); 
+  background-color: #ffffff;
+}
+
+/* Buttons */
+.popup-content button {
+  width: 20%;
+  max-width: 300px;
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #0056b3; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+  transform: scale(1.3);
+  background-color: #0056b3; 
+}
+
+/* Links (like 'Sign Up' and 'Login') */
+.link {
+  color: #007bff; 
+  text-decoration: underline; 
+  cursor: pointer; 
+  font-weight: bold; 
+}
+
+.link:hover {
+  color: #0056b3; 
+  text-decoration: underline;
+}
+
+/* Logo Styling */
+.signup-logo {
+  width: 250px; 
+  height: auto; 
+  margin: 0 auto 20px; 
+  display: block;
+}
+
+/* Subtext Styling */
+.signup-subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Disclaimer Styling */
+.signup-disclaimer {
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Map container for a square view */
+.map-container {
+  position: relative;
+  text-align: center;
+  width: 800px;  
+  height: 600px; 
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #ccc;
+}
+
+/* Map image fills the container's space */
+.map-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 8px;
+  cursor: grab;
+  transition: transform 0.3s ease;
+}
+
+/* Emergency Resources container */
+.emergency-container {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.8;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+/* Weather container */
+.weather-container {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+/* Scrollbar for overflow content */
+.popup-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 10px;
+}
+
+.popup-content::-webkit-scrollbar-thumb:hover {
+  background-color: #aaaaaa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .popup-content {
+    width: 95%;
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .map-container {
+    width: 90%; 
+    height: auto;
+  }
+
+  .popup-content input {
+    width: calc(100% - 10px); 
+  }
+}
+.calgary-description {
+  font-size: 12px;  /* Reduce font size for a smaller text */
+  line-height: 1.6;  /* Adjust line spacing for better readability */
+  font-weight: 300;
+  color: #2c3e50;
+  margin: 10px auto;  /* Small margin for a compact layout */
+  width: 90%;  /* Use a percentage width to make it more flexible */
+  max-width: 4000px;  /* Set a smaller maximum width */
+  text-align: justify;  /* Stretch the text across the container */
+  text-align-last: center;  /* Keep the last line left-aligned */
+  letter-spacing: 0.2px;
+  background-color: #ffff;
+  padding: 10px;  /* Reduced padding for a smaller banner */
+  border-radius: 8px;
+  font-family: 'Calendas Plus', serif;
+}
+
+
+
+.highlight {
+  font-size: 15px; /* Make "Calgary" larger */
+  font-weight: bold; /* Optional: Make it bold for emphasis */
+  color: #ffadad; /* Optional: Change the color to match your theme */
+  font-family: 'Calendas Plus', serif;
+}
+
+.highlight:hover{
+  color:#ff6f61;
+}
+

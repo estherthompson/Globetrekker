@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1px 20px;
+    background-color: #f8f9fa;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center; 
+}
+
+.buttons {
+    display: flex;
+    gap: 20px; 
+    margin-left: 20px; 
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    border: 1px solid black; 
+    background-color: #FFECEC; 
+    padding: 4px 12px; 
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+    background-color: #65558F; 
+    border-color: #65558F; 
+    color: white; 
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; 
+    border: 1px solid transparent; 
+    border-radius: 50%; 
+    padding: 8px; 
+}
+
+.icon:hover {
+    transform: scale(1.1); 
+}
